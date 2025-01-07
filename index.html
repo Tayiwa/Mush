@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayiwa Bwala - Diplomatic Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom Styling */
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      .elegant-font {
+        font-family: "Playfair Display", serif;
+      }
+
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+          url("/api/placeholder/1920/1080");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .gradient-text {
+        background: linear-gradient(120deg, #059669, #10b981);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .achievement-card {
+        transition: all 0.4s ease;
+        border: 1px solid rgba(229, 231, 235, 0.5);
+      }
+
+      .achievement-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-color: #059669;
+      }
+
+      .meeting-card {
+        transition: all 0.4s ease;
+        border: 1px solid rgba(229, 231, 235, 0.5);
+      }
+
+      .meeting-card:hover {
+        transform: translateY(-5px) translateX(5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #059669;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .scroll-fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease;
+      }
+
+      .scroll-fade.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .elegant-border {
+        border: 2px solid rgba(5, 150, 105, 0.2);
+        position: relative;
+      }
+
+      .elegant-border::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px solid rgba(5, 150, 105, 0.1);
+        z-index: -1;
+      }
+
+      .custom-shadow {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      /* Smooth Scroll Behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav
+      class="bg-white bg-opacity-95 backdrop-filter backdrop-blur-lg shadow-sm fixed w-full z-10 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-left h-20">
+          <div class="flex items-center">
+            <div class="flex items-center space-x-4">
+        <!-- Add the person's photo -->
+        <img
+            src="Images/tayus.png"
+            alt="Tayiwa Bwala"
+            class="w-16 h-18 rounded-full border-5 border-emerald-600 shadow-lg"
+           
+        />
+          
+        </div>
+          <div class="hidden md:block">
+            <div class="flex items-center space-x-8">
+              <a
+                href="About Me.html"
+                class="nav-link text-gray-800 hover:text-emerald-600 px-3 py-2 text-sm font-bold"
+                >About Me</a
+              >
+              
+              
+              <a
+                href="#achievements"
+                class="nav-link text-gray-800 hover:text-emerald-600 px-3 py-2 text-sm font-bold"
+                >Achievements</a
+              >
+              <a
+                href="#portfolio"
+                class="nav-link text-gray-800 hover:text-emerald-1000 px-3 py-2 text-sm font-bold"
+                >Portfolio</a
+              >
+              <a
+                href="Contact.html"
+                class="nav-link text-gray-800 hover:text-emerald-1000 px-3 py-2 text-sm font-bold"
+                >Contact</a
+              >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-section min-h-screen flex items-center justify-center text-white"
+    >
+      <div class="text-center animate__animated animate__fadeIn">
+        <h1 class="text-6xl font-bold mb-6 elegant-font">Tayiwa Bwala</h1>
+        <p class="text-xl mb-8 font-light tracking-wide"></p>
+        <p class="text-xl mb-8">Policy Researcher</p>
+        <div class="flex justify-center space-x-4">
+            <!-- Faint Background Image -->
+  <div
+  class="absolute inset-0 bg-cover bg-center opacity-10"
+  style="background-image: url('Images/mushh.png');"
+></div>
+
+  <div class="flex justify-center space-x-4">
+          <a
+            href="#portfolio"
+            class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-medium transition duration-300 transform hover:scale-105"
+            >View Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Achievements -->
+    <section id="achievements" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">
+          Key Achievements of 2024
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="achievement-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="text-emerald-600 text-4xl font-bold mb-2">10+</div>
+            <p class="text-gray-600">
+              High-level Diplomatic Meetings Coordinated
+            </p>
+          </div>
+          <div class="achievement-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="text-emerald-600 text-4xl font-bold mb-2">98%</div>
+            <p class="text-gray-600">Success Rate in Securing Appointments</p>
+          </div>
+          <div class="achievement-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="text-emerald-600 text-4xl font-bold mb-2">4+</div>
+            <p class="text-gray-600">Government Ministries Engaged</p>
+          </div>
+          <div class="achievement-card bg-white p-6 rounded-lg shadow-lg">
+            <div class="text-emerald-600 text-4xl font-bold mb-2">3+</div>
+            <p class="text-gray-600">Major Think Tanks Engaged</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-16">
+          Diplomatic Meetings Portfolio
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Senate Leadership -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/senate tayus.png"
+              alt="Senate Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Senate Leadership Consultation
+              </h3>
+              <p class="text-gray-600 mb-4">
+                High-level bilateral legislative cooperation meeting with Senate
+                President, Sen. Godswill Akpabio
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>October 8, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trade & Investment -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/trade:invest.png"
+              alt="Trade Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Trade & Investment Development
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meeting with Minister Doris Uzoka-Anite focusing on bilateral
+                trade enhancement
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>May 16, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Energy Sector -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/petrol.png"
+              alt="Energy Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Energy Sector Collaboration
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Energy partnership development with Minister Ekperikpe Ekpo
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>May 22, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Finance Minister Meeting -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/wale.png"
+              alt="Finance Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Economic Policy Consultation
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meeting with Minister Wale Edun on bilateral economic
+                cooperation framework
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>July 12, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customs Administration -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/tayusCustom.png"
+              alt="Customs Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Customs Administration Dialogue
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meeting with Comptroller-General Alhaji Bashir Adewale Adeniyi
+                MFR on trade facilitation
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>July 26, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NLNG Meeting -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/lng.png"
+              alt="NLNG Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                NLNG Strategic Partnership
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meeting with Dr. Philip Mshelbila, MD/CEO of Nigeria LNG Limited
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>July 22, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- NESG Meeting -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/nesg.png"
+              alt="NESG Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Economic Summit Planning
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Strategic engagement with Dr. Tayi Aduloju, CEO of Nigerian
+                Economic Summit Group
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>July 14, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSEA Meeting -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/research.png"
+              alt="CSEA Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Research Collaboration Initiative
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Partnership meeting with Dr. Chukwuka Onyekwena, Executive
+                Director of CSEA
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>June 24, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PLAC Meeting -->
+          <div
+            class="meeting-card bg-white rounded-lg overflow-hidden shadow-md"
+          >
+            <img
+              src="Images/plac.png"
+              alt="PLAC Meeting"
+              class="w-full h-46 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Legal Advocacy Consultation
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Meeting with Clement Nwankwo, CEO of Policy and Legal Advocacy
+                Centre
+              </p>
+              <div class="flex items-center text-emerald-600">
+                <span>September 11, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competencies Section -->
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-20 elegant-font">
+          Administrative Competencies
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-emerald-600">
+              Planning
+            </h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>High-Level Coordination</li>
+              <li>Stakeholder Management</li>
+            </ul>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-emerald-600">
+              Protocol Administration
+            </h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Diplomatic Protocol</li>
+              <li>Cross-Cultural Communication</li>
+            </ul>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-emerald-600">
+              Documentation
+            </h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Document Preparation</li>
+              <li>Records Management</li>
+            </ul>
+          </div>
+          <div class="p-6 bg-gray-50 rounded-lg">
+            <h3 class="font-semibold text-lg mb-3 text-emerald-600">
+              Cultural Competency
+            </h3>
+            <ul class="space-y-2 text-gray-600">
+              <li>Cultural Sensitivity</li>
+              <li>International Protocol</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Tayiwa Bwala</h3>
+            <p class="text-gray-400">Economic Policy Researcher</p>
+            <!-- Add the person's photo -->
+        
+        
+        <img
+        src="Images/tayus.png"
+        alt="Tayiwa Bwala"
+        class="w-16 h-18 rounded-full border-5 border-emerald-600 shadow-lg"
+       
+    />
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#achievements" class="text-gray-400 hover:text-white"
+                  >Achievements</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" class="text-gray-400 hover:text-white"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Connect</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Email</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2025 Tayiwa Bwala. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
