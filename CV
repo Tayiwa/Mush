@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tayiwa Bwala - CV</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+      <div
+        class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16"
+      >
+        <ul class="hidden md:flex space-x-6">
+          <li>
+            <a href="index.html" class="text-gray-700 hover:text-emerald-600"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="text-gray-700 hover:text-emerald-600"
+              >About Me</a
+            >
+          </li>
+
+          <li>
+            <a href="contact.html" class="text-gray-700 hover:text-emerald-600"
+              >Contact Me</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CV Section -->
+    <section class="py-20 mt-16">
+      <div class="max-w-4xl mx-auto px-4 bg-white shadow-md rounded-lg p-8">
+        <h1 class="text-4xl font-bold text-emerald-600 text-center mb-8">
+          Curriculum Vitae
+        </h1>
+
+        <!-- Personal Details -->
+
+        <!-- Objective -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">Objective</h2>
+          <p class="text-gray-700 leading-7">
+            A committed diplomatic professional with a nuanced understanding of
+            international relations, seeking to translate multifaceted research
+            experience to promote values and strengthen business cooperation
+            through effective communication and efficient operational
+            management. Bringing a competent record of high-level stakeholder
+            management, cross-cultural communication, and policy analysis to
+            advance diplomatic and economic interests across Africa through
+            research, event coordination, and administrative support.
+          </p>
+          <p class="text-gray-700 italic mt-2">
+            Personal motto: "Building connections, shaping policies, and driving
+            impact."
+          </p>
+        </div>
+
+        <!-- Summary of Qualifications -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">
+            Summary of Qualifications
+          </h2>
+          <ul class="list-disc ml-5 space-y-2 text-gray-700">
+            <li>
+              Proven experience in conducting research on international
+              relations, trade policies, and economic trends.
+            </li>
+            <li>
+              Skilled in preparing detailed reports, drafting content, and
+              presenting insights to senior leadership.
+            </li>
+            <li>
+              Strong organizational and multitasking abilities, with hands-on
+              experience managing events and coordinating high-level
+              engagements.
+            </li>
+            <li>
+              Fluent in English and Hausa, with excellent verbal and written
+              communication skills.
+            </li>
+            <li>
+              Deep understanding of Nigerian society, politics, and economic
+              environment, with the ability to foster meaningful connections
+              across sectors.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">Education</h2>
+          <ul class="list-disc ml-5 space-y-2 text-gray-700">
+            <li>
+              <strong>Master of Laws (LLM), International Business Law</strong>
+              – BPP University, UK (2021)
+            </li>
+            <li>
+              <strong>Bar Professional Training</strong> – Nigerian Law School,
+              Abuja, Nigeria (2013)
+            </li>
+            <li>
+              <strong>Bachelor of Laws (LLB)</strong> – University of
+              Buckingham, UK (2010)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">
+            Professional Experience
+          </h2>
+          <ul class="mt-2 space-y-6 text-gray-700">
+            <li>
+              <strong
+                >International Relations, Economics, and Politics
+                Researcher</strong
+              >
+              – Embassy of the Republic of Korea, Abuja (2024 - Current)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Conduct research on Nigeria-Korea diplomatic relations,
+                  economic policies, and trade opportunities.
+                </li>
+                <li>
+                  Prepare weekly economic reports on Nigeria's non-oil sectors.
+                </li>
+                <li>
+                  Coordinate stakeholder engagements with government officials,
+                  think tanks, and civil society organizations.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Research Consultant</strong> – Policy and Legal Advocacy
+              Centre, Abuja (2022 - 2023)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Conducted research on electoral reforms, international
+                  relations, and regional economics.
+                </li>
+                <li>
+                  Provided briefings on global event implications for Nigeria’s
+                  trade policies and diplomatic engagements.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Pro-bono, Civil Rights Law</strong> – Ta'fisu Albarka Law
+              Firm, Abuja (2021 - 2022)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Litigated cases involving gender equity, minority rights, and
+                  migration governance.
+                </li>
+                <li>
+                  Conducted legal research to inform advocacy on human rights
+                  and social inclusion.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Programme Officer</strong> – Yar’Adua Foundation, Abuja
+              (2018 - 2020)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Managed advocacy programs focused on governance, transparency,
+                  and social inclusion.
+                </li>
+                <li>
+                  Coordinated multi-stakeholder events and managed budgets for
+                  inter-agency initiatives.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Technical Assistant</strong> – Independent National
+              Electoral Commission, Abuja (2017 - 2018)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Supported the development of research-driven policies to
+                  enhance electoral governance and inclusion.
+                </li>
+                <li>
+                  Researched international electoral laws to improve dispute
+                  resolution mechanisms.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Associate</strong> – DLA Piper Africa, Abuja (2015 - 2017)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Advised on compliance with international governance and
+                  transparency regulations.
+                </li>
+                <li>
+                  Contributed to legal strategies on international relations and
+                  development law.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Legislative Intern</strong> – Policy and Legal Advocacy
+              Centre, Abuja (February 2015-May 2015)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Researched legislative policies and prepared briefs to support
+                  Senate committee deliberations.
+                </li>
+                <li>
+                  Assisted in drafting and reviewing policy documents for
+                  legislative processes.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Trainee Associate</strong> – Udo Udoma & Belo-Osagie,
+              Abuja (2013 - 2014)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>
+                  Enrolled for the one-year mandatory National Youth Service
+                  Corps
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Dispute/Fraud Analyst</strong> – Barclays Bank, Coventry,
+              United Kingdom (2010 - 2012)
+              <ul class="list-disc ml-5 mt-2 space-y-2">
+                <li>Conducted analysis of data and case evidence</li>
+              </ul>
+            </li>
+            <!-- Add more roles as necessary -->
+          </ul>
+        </div>
+
+        <!-- Certifications -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">Certifications</h2>
+          <ul class="list-disc ml-5 space-y-2 text-gray-700">
+            <li>
+              Microsoft Power BI Training – Nigerian Institute of Space
+              Engineers (2023)
+            </li>
+            <li>
+              Public Policy: Social, Economic, and Foreign Policies – Harvard
+              University (2021)
+            </li>
+
+            <li>
+              Result-Based Monitoring & Evaluation and Communicating Impact –
+              WACSI (2018)
+            </li>
+            <li>
+              Advanced Practice and Procedure Course – Nigerian Institute of
+              Advanced Legal Studies (2018)
+            </li>
+          </ul>
+        </div>
+
+        <!-- Languages -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold text-gray-700">Languages</h2>
+          <p class="text-gray-700">English (Fluent), Hausa (Native Speaker)</p>
+        </div>
+
+        <!-- Download CV -->
+        <div class="text-center mt-8">
+          <a
+            href="Tayiwa_Bwala_CV.pdf"
+            class="border-2 border-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-full font-medium transition duration-300 transform hover:scale-105"
+            download
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2025 Tayiwa Bwala. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
